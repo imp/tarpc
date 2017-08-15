@@ -296,6 +296,7 @@ macro_rules! service {
 
         /// The future returned by `FutureServiceExt::listen`.
         #[allow(unused)]
+        #[derive(Debug)]
         pub struct Listen<S>
             where S: FutureService,
         {
